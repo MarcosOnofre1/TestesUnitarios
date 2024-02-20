@@ -16,6 +16,15 @@ fun countXO(str: String): Boolean {
     return countO == countX && countO != 0
 }
 
-fun main() {
+fun abc(): Boolean {
+    // e existe assim do jeito de um codigo
+    // ** vale lembrar que esse codigo feito aqui é so pra forçar um NullPointerException()
+    val str: String? = null
+    return str!!.length == 0
 
+    // existe 2 tipos para exeçoes, da pra fazer capturando assim do jeito mais pratico
+    // throw NullPointerException()
+}
+fun main() {
+    abc()
 }
